@@ -5,7 +5,11 @@ ublox_gps_node:
     device: /dev/ttyACM0
     frame_id: gps
     uart1:
-      baudrate: 9600
+      baudrate: 115200
+
+    rate: 5.0
+
+    dynamic_model: automotive
     # TMODE3 Config
     tmode3: 0                   # Disabled
     sv_in:
