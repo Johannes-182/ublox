@@ -29,36 +29,3 @@ ublox_gps_node:
       nav:
         posecef: false
 
-
-# Vorschlag von Gemini für ZED-F9P
-# ublox_gps_node:
-#   ros__parameters:
-#     debug: 1                    # Setze auf 1, um zu sehen, ob Daten kommen
-#     device: /dev/ttyACM0
-#     frame_id: gps
-    
-#     # Konfiguration für UART1
-#     uart1:
-#       baudrate: 115200          # Höhere Baudrate für F9P empfohlen!
-#       # Optional: Protokolle definieren (ubx input/output, rtcm input)
-#       # in: 1  # UBX+NMEA+RTCM3
-#       # out: 1 # UBX+NMEA+RTCM3
-
-#     # Frequenz der Positionsupdates (ZED-F9P kann bis zu 20Hz, M8P oft nur 1-5Hz)
-#     rate: 5.0                   # 5 Hz ist ein guter Standard für Roboter
-
-#     # Navigations-Engine Einstellungen (Wichtig für Roboter)
-#     nav:
-#       posecef: false            # Position in ECEF Koordinaten (meist false)
-#       posllh: true              # Lat/Lon/Height (meist true)
-    
-#     # TMODE3 Config (0 = Rover)
-#     tmode3: 0
-
-#     # Nachrichten veröffentlichen
-#     publish:
-#       all: true
-#       nav:
-#         posecef: false
-#         posllh: true
-#         pvt: true               # Position Velocity Time (Sehr nützlich beim F9P)
